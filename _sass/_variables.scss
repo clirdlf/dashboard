@@ -1,0 +1,16 @@
+@import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css';
+@import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css';
+
+$clir-burgundy: #560319;
+$dlf-blue:      #046BA5;
+$ndsa-blue:     #0165AE;
+$hc-blue:       darken($dlf-blue, 15%);
+
+.clir-color { color: $clir-burgundy; }
+.clir-font  { font-family: 'A028', serif; }
+
+.logo {
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+}

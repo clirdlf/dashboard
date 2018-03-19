@@ -1,0 +1,72 @@
+
+<!--Footer-->
+<footer class="page-footer font-small lighten-3 pt-4 mt-4">
+
+  <div class="container text-center text-md-left">
+          <div class="row">
+
+              <!--First column-->
+              <div class="col-md-6">
+                  <h5 class="text-uppercase">Footer Content</h5>
+                  <p>Here you can use rows and columns here to organize your footer content.</p>
+              </div>
+              <!--/.First column-->
+
+              <!--Second column-->
+              <div class="col-md-6">
+                  <h5 class="text-uppercase">Links</h5>
+                  <ul class="list-unstyled">
+                      <li>
+                          <a href="#!">Link 1</a>
+                      </li>
+                      <li>
+                          <a href="#!">Link 2</a>
+                      </li>
+                      <li>
+                          <a href="#!">Link 3</a>
+                      </li>
+                      <li>
+                          <a href="#!">Link 4</a>
+                      </li>
+                  </ul>
+              </div>
+              <!--/.Second column-->
+          </div>
+      </div>
+
+  <div class="footer-info-area">
+    <div class="container">
+      <div class="site-info">
+        <p class="pull-right">
+          All content on this site is available for re-use under
+          <a href="https://creativecommons.org/licenses/by-sa/4.0/legalcode">CC BY-SA 4.0 License</a>
+        </p>
+        <p class="logo">
+          <a href="https://www.clir.org/">
+            <i class="icon-clir-logo-square clir-color"></i>
+            <span class="clir clir-font clir-color">CLIR</span>
+          </a>
+        </p>
+      </div>
+    </div>
+</footer>
+<!--/.Footer-->
+<!-- The scroll to top feature -->
+<div class="scroll-top-wrapper ">
+  <span class="scroll-top-inner">
+    <i class="fa fa-2x fa-arrow-circle-up"></i>
+  </span>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script src="{{ '/js/scripts.js' | prepend: site.baseurl }}"></script>
+
+{% if site.google-tracking-id %}
+<script>
+window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async defer></script>
+{% endif %}
