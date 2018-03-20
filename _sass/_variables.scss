@@ -1,13 +1,21 @@
 @import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/style.min.css';
 @import 'https://cdn.rawgit.com/clirdlf/logo-fonts/master/clir-font/stylesheet.min.css';
 
-$clir-burgundy: #560319;
+// $clir-burgundy: #560319;
+$clir-burgundy: #fff;
 $dlf-blue:      #046BA5;
 $ndsa-blue:     #0165AE;
 $hc-blue:       darken($dlf-blue, 15%);
 
+$light-gray: #F9F9F9;
+$gray:       #f6f6f6;
+$dark-gray:  #2f2f2f;
+
 .clir-color { color: $clir-burgundy; }
 .clir-font  { font-family: 'A028', serif; }
+
+.dlf  { font-family: 'Crimson Text', serif; }
+.dlf-color  { color: $dlf-blue; }
 
 .logo {
   font-size: 22px;

@@ -3,12 +3,9 @@
 @import 'portfolio';
 @import 'grid';
 @import 'testimonials';
+@import 'footer';
 
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700';
-
-$light-gray: #F9F9F9;
-$gray: #f6f6f6;
-$dark-gray: #2f2f2f;
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text';
 
 p {
   margin: 0 0 10px;
@@ -20,6 +17,14 @@ p {
   line-height: 30px;
   font-size: 14px;
   letter-spacing: 0.4px;
+}
+
+.footer-banner {
+  background-color: #34495e;
+  color: #fff;
+  margin-left: 42px;
+  min-height: 316px;
+  padding: 0 30px 30px;
 }
 
 .gray-bg {
