@@ -36,19 +36,28 @@ $(function() {
         }
     });
 
-
-    $('.owl-carousel').owlCarousel({
-        autoPlay: 3000, //Set AutoPlay to 3 seconds
-
+    var owl = $('.owl-carousel');
+    var timeout = 3000;
+    owl.owlCarousel({
+        autoplayTimeout: timeout, //Set AutoPlay to 3 seconds
+        autoplayHoverPause: true,
+        loop: true,
+        nav: true,
+        autoplay: true,
         items: 1,
-        itemsDesktop: [1199, 1],
-        itemsDesktopSmall: [979, 1],
-        itemsTablet: [768, 1],
-        itemsMobile: [479, 1],
+        // responsive: {
+        //     0: { items: 1 },
+        //     600: { items: 1 },
+        //     1000: { items: 1 }
+        // }
+    });
 
-        // CSS Styles
-        baseClass: "owl-carousel",
-        theme: "owl-theme"
+    $('.play').on('click', function() {
+        owl.trigger('play.owl.autoplay', [timeout]);
+    });
+
+    $('.stop').on('click', function() {
+        owl.trigger('play.owl.autoplay');
     });
 
 });
