@@ -21,17 +21,44 @@ description: >- # this means to ignore newlines until "baseurl:"
   Google search results) and in your feed.xml site description.
 baseurl: "dashboard" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: clirdlf
-github_username:  clirdlf
 
 sass:
   style: compressed
 
+# For https://github.com/jekyll/jekyll-seo-tag
+author:
+logo:
+
+social:
+  name: Digital Library Federation
+  links:
+    - https://twitter.com/clirdlf
+    - https://www.facebook.com/CLIRDLF/
+    - https://www.linkedin.com/groups/3387265
+    - https://www.youtube.com/user/DLFCLIR
+    - https://github.com/clirdlf
+
+twitter:
+  username: clirdlf
+
+webmaster_verifications:
+  google: 1234
+  bing: 1234
+  alexa: 1234
+  yandex: 1234
+  baidu: 1234
+
+# https://github.com/jekyll/jekyll-feed
 feed:
   path: atom.xml
 
+kramdown:
+  smart_quotes: apos,apos,quot,quot
+  typographic_symbols: {hellip: ...}
+
 # Build settings
 markdown: kramdown
+
 plugins:
   - jekyll-feed
   - jekyll-paginate
