@@ -1,0 +1,32 @@
+@import 'variables';
+
+footer {
+  a { color: #00040c; }
+
+  p {
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    font-weight: 300;
+  }
+
+  .footer-info-area {
+    padding: 40px 0;
+    background-color: #585858;
+    color: #fff;
+    a {
+      color: #97a0af;
+
+      &:hover {
+        color: #fff;
+        // transition: ease 0.5s;
+      }
+    }
+  }
+
+  .footer-banner {
+    color: #fff;
+
+    a { color: $light-gray; }
+  }
+}
