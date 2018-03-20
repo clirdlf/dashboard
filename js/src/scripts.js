@@ -1,4 +1,4 @@
-//= require ../../node_modules/jquery.nicescroll/dist/jquery.nicescroll.js
+//= require ../../node_modules/owl.carousel/dist/owl.carousel.js
 
 $(function() {
     'use strict';
@@ -26,7 +26,6 @@ $(function() {
 
     /*------- Smooth Scroll -------*/
     $('a[href^="#"]').on('click', function(event) {
-
         var target = $($(this).attr('href'));
 
         if (target.length) {
@@ -35,10 +34,21 @@ $(function() {
                 scrollTop: target.offset().top
             }, 1000);
         }
-
     });
 
 
+    $('.owl-carousel').owlCarousel({
+        autoPlay: 3000, //Set AutoPlay to 3 seconds
 
+        items: 1,
+        itemsDesktop: [1199, 1],
+        itemsDesktopSmall: [979, 1],
+        itemsTablet: [768, 1],
+        itemsMobile: [479, 1],
+
+        // CSS Styles
+        baseClass: "owl-carousel",
+        theme: "owl-theme"
+    });
 
 });

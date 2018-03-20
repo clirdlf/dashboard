@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'scrolltop';
 @import 'portfolio';
+@import 'grid';
 
 $light-gray: #F9F9F9;
 $gray: #f6f6f6;
@@ -18,9 +19,14 @@ p {
   letter-spacing: 0.4px;
 }
 
-
 .gray-bg {
   background: $gray;
+  padding: 120px 0;
+  display: block;
+}
+
+.gray-white {
+  background: #fff;
   padding: 120px 0;
   display: block;
 }

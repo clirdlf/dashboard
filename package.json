@@ -5,7 +5,9 @@
   "main": "gulpfile.js",
   "author": "Wayne Graham",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "owl.carousel": "^2.3.2"
+  },
   "devDependencies": {
     "browser-sync": "^2.23.6",
     "dotenv": "^4.0.0",

@@ -103,7 +103,7 @@ gulp.task('modernizr', function() {
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
-    gulp.watch('_sass/*.scss', ['sass']);
+    gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
     gulp.watch('js/src/*.js', ['scripts', 'compress']);
     gulp.watch(['*.html', '_layouts/*', '_includes/*', '*.md', '_events/*', '_posts/*',], ['jekyll-rebuild']);
 });
