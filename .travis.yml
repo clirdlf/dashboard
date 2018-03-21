@@ -1,7 +1,7 @@
 language: ruby
 cache: bundler
 rvm:
-  - 2.5.0
+  - 2.3.1
 before_install:
 - openssl aes-256-cbc -K $encrypted_2384c7572be8_key -iv $encrypted_2384c7572be8_iv -in deploy_rsa.enc -out /tmp/deploy_rsa -d -in deploy_rsa.enc -out deploy_rsa -d
 - gem update --system
