@@ -71,7 +71,13 @@ plugins:
 exclude:
   - Gemfile
   - Gemfile.lock
+  - README.md
+  - gulpfile.js
+  - package*.json
   - node_modules
+  - js/build
+  - js/src
+  - script
   - vendor/bundle/
   - vendor/cache/
   - vendor/gems/
