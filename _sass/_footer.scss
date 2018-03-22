@@ -1,7 +1,12 @@
 @import 'variables';
 
 footer {
+
   a { color: #00040c; }
+
+  h3 {
+    padding-top: 80px;
+  }
 
   p {
     font-size: 15px;
@@ -26,6 +31,7 @@ footer {
 
   .footer-banner {
     color: #fff;
+    padding-bottom: 100px;
 
     a { color: $light-gray; }
   }

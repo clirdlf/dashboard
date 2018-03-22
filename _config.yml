@@ -27,7 +27,7 @@ sass:
 
 # For https://github.com/jekyll/jekyll-seo-tag
 author:
-logo: /images/dlf-logo1024x1024.png
+logo: /images/logo.png
 
 social:
   name: Digital Library Federation

@@ -1,8 +1,10 @@
 @import 'variables';
 @import 'scrolltop';
+@import 'header';
 @import 'portfolio';
 @import 'grid';
 @import 'testimonials';
+@import 'card';
 @import 'footer';
 
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text';
@@ -27,13 +29,15 @@ p {
   padding: 0 30px 30px;
 }
 
-.gray-bg {
+
+
+.bg-gray {
   background: $gray;
   padding: 120px 0;
   display: block;
 }
 
-.gray-white {
+.bg-white {
   background: #fff;
   padding: 120px 0;
   display: block;

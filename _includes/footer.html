@@ -1,6 +1,5 @@
-
 <!--Footer-->
-<footer class="gray-bg">
+<footer>
   <div class="container">
     <div class="row">
       <div class="col-7">
@@ -96,7 +95,7 @@
 {% if site.google-tracking-id %}
 <script>
 window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
-ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+ga('create','{{ site.google-tracking-id }}','auto');ga('send','pageview')
 </script>
 <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 {% endif %}

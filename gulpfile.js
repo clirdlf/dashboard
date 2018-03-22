@@ -10,6 +10,12 @@ var uglify      = require('gulp-uglify');
 var pump        = require('pump');
 var modernizr   = require('gulp-modernizr');
 
+// @see https://gist.github.com/LoyEgor/e9dba0725b3ddbb8d1a68c91ca5452b5
+var imagemin = require('gulp-imagemin');
+var imageminPngquant = require('imagemin-pngquant');
+var imageminZopfli = require('imagemin-zopfli');
+var imageminMozjpeg = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
+var imageminGiflossy = require('imagemin-giflossy');
 
 var jekyll   = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -99,12 +105,56 @@ gulp.task('modernizr', function() {
 });
 
 /**
+ * Minifiy images
+ */
+gulp.task('imagemin', function(){
+  return gulp.src(['images/**/*.{gif,png,jpg,svg}'])
+        .pipe(imagemin([
+            //png
+            imageminPngquant({
+                speed: 1,
+                quality: 98 //lossy settings
+            }),
+            imageminZopfli({
+                more: true
+            }),
+            //gif
+            // imagemin.gifsicle({
+            //     interlaced: true,
+            //     optimizationLevel: 3
+            // }),
+            //gif very light lossy, use only one of gifsicle or Giflossy
+            imageminGiflossy({
+                optimizationLevel: 3,
+                optimize: 3, //keep-empty: Preserve empty transparent frames
+                lossy: 2
+            }),
+            //svg
+            imagemin.svgo({
+                plugins: [{
+                    removeViewBox: false
+                }]
+            }),
+            //jpg lossless
+            imagemin.jpegtran({
+                progressive: true
+            }),
+            //jpg very light lossy, use vs jpegtran
+            imageminMozjpeg({
+                quality: 90
+            })
+        ]));
+        // .pipe(gulp.dest('lib'));
+});
+
+/**
  * Watch scss files for changes & recompile
  * Watch html/md files, run jekyll & reload BrowserSync
  */
 gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
     gulp.watch('js/src/*.js', ['scripts', 'compress', 'jekyll-rebuild']);
+    gulp.watch('images/**/*.{gif,jpg,png}', ['imagemin']);
     gulp.watch(['*.html', '_layouts/*', '_includes/*', '*.md', '_events/*', '_posts/*',], ['jekyll-rebuild']);
 });
 
