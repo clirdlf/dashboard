@@ -23,7 +23,7 @@
     "imagemin-mozjpeg": "^7.0.0",
     "imagemin-pngquant": "^5.1.0",
     "imagemin-zopfli": "^5.1.0",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.0",
     "pump": "^1.0.1"
   }
 }
