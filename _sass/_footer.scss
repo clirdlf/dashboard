@@ -2,7 +2,7 @@
 
 footer {
 
-  a { color: #00040c; }
+  a { color: $blush; }
 
   h3 {
     padding-top: 80px;
@@ -23,7 +23,7 @@ footer {
       color: #97a0af;
 
       &:hover {
-        color: #fff;
+        color: $blush;
         // transition: ease 0.5s;
       }
     }

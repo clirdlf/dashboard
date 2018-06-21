@@ -7,10 +7,15 @@
 @import 'card';
 @import 'footer';
 
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text|Fira+Sans';
 
 p {
   margin: 0 0 10px;
+}
+
+h3 {
+  font-family: 'Fira Sans', sans-serif;
+
 }
 
 .content-detail {
@@ -22,7 +27,7 @@ p {
 }
 
 .footer-banner {
-  background-color: #34495e;
+  background-color: $blueberry;
   color: #fff;
   margin-left: 42px;
   min-height: 316px;
