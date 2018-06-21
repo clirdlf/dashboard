@@ -7,23 +7,31 @@
 @import 'card';
 @import 'footer';
 
-@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text|Fira+Sans';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text|Fira+Sans|Abril+Fatface|Open+Sans';
 
 p {
   margin: 0 0 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+
+}
+
+h5 {
+  font-family: 'Abril Fatface', cursive;
+
 }
 
 h3 {
-  font-family: 'Fira Sans', sans-serif;
+  font-family: 'Open Sans', sans-serif;
 
 }
 
 .content-detail {
   font-weight: 400;
   margin-top: 70px;
-  line-height: 30px;
-  font-size: 14px;
+  font-size: 15px;
   letter-spacing: 0.4px;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .footer-banner {

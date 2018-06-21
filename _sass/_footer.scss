@@ -6,6 +6,8 @@ footer {
 
   h3 {
     padding-top: 80px;
+    font-family: 'Open Sans', sans-serif;
+
   }
 
   p {
@@ -13,11 +15,13 @@ footer {
     line-height: 20px;
     margin-bottom: 10px;
     font-weight: 300;
+    font-family: 'Open Sans', sans-serif;
   }
 
   .footer-info-area {
     padding: 40px 0;
     background-color: #585858;
+    font-family: 'Open Sans', sans-serif;
     color: #fff;
     a {
       color: #97a0af;
@@ -32,6 +36,7 @@ footer {
   .footer-banner {
     color: #fff;
     padding-bottom: 100px;
+    font-family: 'Open Sans', sans-serif;
 
     a { color: $light-gray; }
   }
