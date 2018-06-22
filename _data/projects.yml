@@ -1,35 +1,45 @@
 - name: Digitization Cost Calculator
-  image: https://source.unsplash.com/800x800?calculator
+  image: https://source.unsplash.com/284x160?calculator
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: dlf-groups
+  groups:
+    - dlf-groups
+    - foo
+    - bar
 
 - name: IRUS-USA
-  image: https://source.unsplash.com/800x800?british
+  image: https://source.unsplash.com/582x329?british
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: dlf-affiliates
+  groups:
+    - dlf-affiliates
 
 - name: Design for Diversity
-  image: https://source.unsplash.com/800x800?library
+  image: https://source.unsplash.com/284x160?library
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: dlf-affiliates, best-practices
+  groups:
+    - dlf-affiliates
+    - best-practices
 
 - name: Metadata Application Profile Clearinghouse
-  image: https://source.unsplash.com/collection/488/800x800
+  image: https://source.unsplash.com/collection/488/582x329
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: toolkits
+  groups:
+    - toolkits
 
 - name: learn@dlf
-  image: https://source.unsplash.com/800x800?learn
+  image: https://source.unsplash.com/284x160?learn
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: professional-development
+  groups:
+    - professional-development
 
 - name: DLF Community Calendar
   image: https://source.unsplash.com/800x800?community
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-  groups: events, profesional-development
+  groups:
+    - events
+    - profesional-development

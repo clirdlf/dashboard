@@ -1,10 +1,9 @@
 @import 'variables';
 @import 'scrolltop';
 @import 'header';
-@import 'portfolio';
-@import 'grid';
-@import 'testimonials';
-@import 'card';
+@import 'shuffle';
+// @import 'shuffle-base';
+
 @import 'footer';
 
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text|Fira+Sans|Abril+Fatface|Open+Sans';
@@ -25,7 +24,6 @@ h3 {
   font-family: 'Open Sans', sans-serif;
 
 }
-
 
 .content-detail {
   font-weight: 400;
