@@ -1,11 +1,13 @@
 @import 'variables';
 @import 'scrolltop';
 @import 'header';
-@import 'shuffle';
+@import 'portfolio';
+// @import 'shuffle';
 // @import 'shuffle-base';
 
 @import 'footer';
 
+// TODO: remove unused fonts
 @import 'https://fonts.googleapis.com/css?family=Roboto+Slab:400,700|Crimson+Text|Fira+Sans|Abril+Fatface|Open+Sans';
 
 p {
@@ -25,14 +27,6 @@ h3 {
 
 }
 
-.content-detail {
-  font-weight: 400;
-  margin-top: 70px;
-  font-size: 15px;
-  letter-spacing: 0.4px;
-  font-family: 'Open Sans', sans-serif;
-}
-
 .footer-banner {
   background-color: $blueberry;
   color: #fff;
@@ -40,8 +34,6 @@ h3 {
   min-height: 316px;
   padding: 0 30px 30px;
 }
-
-
 
 .bg-gray {
   background: $gray;

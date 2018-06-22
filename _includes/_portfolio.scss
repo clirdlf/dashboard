@@ -1,17 +1,12 @@
 //portfolio style
 // from https://colorlib.com/wp/template/cocoon/
 
-@import 'variables';
-
-.active {
-  background-color: red;
-}
-
 .project_box_one{
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  cursor:pointer;
+  // cursor:crosshair;
+  cursor: pointer;
   @include single-transition(all , ease-in-out , 0.4s);
   img{
     display: block;

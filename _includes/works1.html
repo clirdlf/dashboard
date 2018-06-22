@@ -1,49 +1,53 @@
 <section class="bg-gray" id="projects">
-  <div class="container">
-    <div class="row">
-      <div class="col">
-        <h3>DLF Dashboard</h3>
-        <h4>Collaborative. Collegial. Creative.</h4>
-        <p class="content-detail">Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.</p>
-        <p class="content-detail"></p>
-        <h5>Filter by</h5>
-        <div class="filter-options">
-          <button class="btn btn-primary" data-group="dlf-groups">DLF Groups</button>
-          <button class="btn btn-primary" data-group="dlf-affiliates">DLF Affiliates</button>
-          <button class="btn btn-primary" data-group="best-practices">Best Practices</button>
-          <button class="btn btn-primary" data-group="toolkits">Toolkits</button>
-          <button class="btn btn-primary" data-group="profesional-development">Professional Development</button>
-          <button class="btn btn-primary" data-group="visualizations">Visualizations</button>
-          <button class="btn btn-primary" data-group="reports">Reports & Grey Literature</button>
-          <button class="btn btn-primary" data-group="events">Events</button>
-        </div>
-      </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <h3>DLF Dashboard</h3>
+                <h4>Collaborative. Collegial. Creative.</h4>
+                <p class="content-detail">Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.</p>
+                <p class="content-detail"></p>
+                <h5>Filter by</h5>
 
-      <div class="col-9">
+                <ul id="filtr-container" class="filter_nav">
+                    <li data-filter="*" class="active"><a href="javascript:void(0)">all</a></li>
+                    <li data-filter=".dlf-groups"> <a href="javascript:void(0)">Groups</a></li>
+                    <li data-filter=".dlf-affiliates"><a href="javascript:void(0)">Affiliates</a></li>
+                    <li data-filter=".best-practices"><a href="javascript:void(0)">Best Practices</a></li>
+                    <li data-filter=".toolkits"><a href="javascript:void(0)">Toolkits</a></li>
+                    <li data-filter=".professional-development"><a href="javascript:void(0)">Professional Development</a></li>
+                    <li data-filter=".visualizations"><a href="javascript:void(0)">Visualizations</a></li>
+                    <li data-filter=".reports"><a href="javascript:void(0)">Reports &amp; Grey Literature</a></li>
+                    <li data-filter=".events"><a href="javascript:void(0)">Events</a></li>
+                </ul>
+            </div>
 
-        <div class="container">
-          <div id="grid" class="row my-shuffle-container">
-            {% for project in site.data.projects %}
-            <figure class="col-3@xs col-4@sm col-3@md picture-item" data-groups='{{ project.groups | append: """ | join: ", " }}' data-date-created="2017-04-30" data-title="Lake Walchen">
-              <div class="picture-item__inner">
-                <div class="aspect aspect--16x9">
-                  <div class="aspect__inner">
-                    <img src="{{ project.image }}" alt="{{ project.name }}" />
-                    <!-- <img class="picture-item__blur" src="{{ project.image }}" alt="{{ project.name }}" aria-hidden="true" /> -->
-                  </div>
+            <!-- TODO: fix for mobile -->
+            <div class="col-9">
+                <div class="portfolio">
+                    <div class="container-fluid">
+                        <div class="grid img-container justify-content-center no-gutters">
+                            <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+                            {% for project in site.data.projects %}
+                            <div class="grid-item branding {{ project.groups | join: " " }} col-sm-12 col-md-6 col-lg-3">
+                                <a href="{{ project.url }}" title="{{ project.name }}">
+                                    <div class="project_box_one">
+                                        <img src="{{ project.image }}" alt="{{ project.name }}" />
+                                        <div class="product_info">
+                                            <div class="product_info_text">
+                                                <div class="product_info_text_inner">
+                                                    <i class="ion ion-plus"></i>
+                                                    <h4>{{ project.name }} </h4>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-
-                <div class="picture-item__details">
-                  <figcaption class="picture-item__title"><a href="{{ project.url }}" target="_blank" rel="noopener">{{ project.description }}</a></figcaption>
-                  <p class="picture-item__tags hidden@xs">{{ project.groups | join: ", " }}</p>
-                </div>
-
-              </div>
-            </figure>
-            {% endfor %}
-
-          x
-          </div>
+            </div>
         </div>
-      </div>
-    </section>
+    </div>
+</section>
