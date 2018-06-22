@@ -6,7 +6,8 @@
   "author": "Wayne Graham",
   "license": "MIT",
   "dependencies": {
-    "owl.carousel": "^2.3.2"
+    "owl.carousel": "^2.3.2",
+    "shufflejs": "^5.1.2"
   },
   "devDependencies": {
     "browser-sync": "^2.23.6",

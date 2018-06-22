@@ -1,66 +1,38 @@
 <section class="bg-gray" id="works">
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <h3>DLF Dashboard</h3>
-                <h4>Collaborative. Collegial. Creative.</h4>
-                <p class="content-detail">Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.</p>
-                <p class="content-detail"></p>
-                <h5>Filter by</h5>
-                <p>DLF Groups</p>
-                <p>DLF Affiliates</p>
-                <p>Best Practices</p>
-                <p>Toolkits</p>
-                <p>Professional Development</p>
-                <p>Visualizations</p>
-                <p>Reports & Grey Literature</p>
-                <p>Events</p>
-            </div>
-            <div class="col-9">
-                <ul class="portfolio-image">
-                    <li class="col-6">
-                        <a href="#top">
-              <img alt="image" src="https://source.unsplash.com/800x800?calculator">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>DLF Dashboard</h3>
+        <h4>Collaborative. Collegial. Creative.</h4>
+        <p class="content-detail">Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.</p>
+        <p class="content-detail"></p>
+        <h5>Filter by</h5>
+        <p>DLF Groups</p>
+        <p>DLF Affiliates</p>
+        <p>Best Practices</p>
+        <p>Toolkits</p>
+        <p>Professional Development</p>
+        <p>Visualizations</p>
+        <p>Reports & Grey Literature</p>
+        <p>Events</p>
+      </div>
+
+      <div class="col-9">
+        <ul class="portfolio-image">
+          {% for project in site.data.projects %}
+          <li class="col-6">
+            <a href="{{ project.url }}">
+              <img alt="image" src="{{ project.image }}">
               <div class="decription-wrap">
                 <div class="image-bg">
-                  <p class="desc">Digitazation Cost Calculator</p>
+                  <p class="desc">{{ project.name }}</p>
                 </div>
               </div>
             </a>
-                    </li>
-                    <li class="col-6">
-                        <a href="#top">
-              <img alt="image" src="https://source.unsplash.com/800x800?british">
-              <div class="decription-wrap">
-                <div class="image-bg">
-                  <p class="desc">IRUS-USA</p>
-                </div>
-              </div>
-            </a>
-                    </li>
-                    <li class="col-6">
-                        <a href="#top">
-              <img alt="image" src="https://source.unsplash.com/800x800?library">
-              <div class="decription-wrap">
-                <div class="image-bg">
-                  <p class="desc">Design for Diversity</p>
-                </div>
-              </div>
-            </a>
-                    </li>
-                    <li class="col-6">
-                        <a href="#top">
-              <img alt="image" src="https://source.unsplash.com/collection/488/800x800">
-              <div class="decription-wrap">
-                <div class="image-bg">
-                  <p class="desc">Metadata Application Profile Clearinghouse</p>
-                </div>
-              </div>
-            </a>
-                    </li>
-                </ul>
-                <!-- .portfolio-image -->
-            </div>
-        </div>
+          </li>
+          {% endfor %}
+        </ul> <!-- .portfolio-image -->
+      </div>
     </div>
+  </div>
 </section>

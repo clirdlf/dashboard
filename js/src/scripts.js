@@ -1,4 +1,4 @@
-//= require ../../node_modules/owl.carousel/dist/owl.carousel.js
+//= require ../../node_modules/shufflejs/dist/shuffle.js
 
 $(function() {
     'use strict';
@@ -36,28 +36,6 @@ $(function() {
         }
     });
 
-    var owl = $('.owl-carousel');
-    var timeout = 3000;
-    owl.owlCarousel({
-        autoplayTimeout: timeout, //Set AutoPlay to 3 seconds
-        autoplayHoverPause: true,
-        loop: true,
-        nav: true,
-        autoplay: true,
-        items: 1,
-        // responsive: {
-        //     0: { items: 1 },
-        //     600: { items: 1 },
-        //     1000: { items: 1 }
-        // }
-    });
 
-    $('.play').on('click', function() {
-        owl.trigger('play.owl.autoplay', [timeout]);
-    });
-
-    $('.stop').on('click', function() {
-        owl.trigger('play.owl.autoplay');
-    });
 
 });

@@ -155,7 +155,7 @@ gulp.task('watch', function () {
     gulp.watch('_sass/*.scss', ['sass', 'jekyll-rebuild']);
     gulp.watch('js/src/*.js', ['scripts', 'compress', 'jekyll-rebuild']);
     gulp.watch('images/**/*.{gif,jpg,png}', ['imagemin']);
-    gulp.watch(['*.html', '_layouts/*', '_includes/*', '*.md', '_events/*', '_posts/*',], ['jekyll-rebuild']);
+    gulp.watch(['*.html', '_data/*', '_layouts/*', '_includes/*', '*.md', '_events/*', '_posts/*',], ['jekyll-rebuild']);
 });
 
 /**

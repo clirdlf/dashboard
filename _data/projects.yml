@@ -1,0 +1,35 @@
+- name: Digitization Cost Calculator
+  image: https://source.unsplash.com/800x800?calculator
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: dlf-groups
+
+- name: IRUS-USA
+  image: https://source.unsplash.com/800x800?british
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: dlf-affiliates
+
+- name: Design for Diversity
+  image: https://source.unsplash.com/800x800?library
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: dlf-affiliates, best-practices
+
+- name: Metadata Application Profile Clearinghouse
+  image: https://source.unsplash.com/collection/488/800x800
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: toolkits
+
+- name: learn@dlf
+  image: https://source.unsplash.com/800x800?learn
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: professional-development
+
+- name: DLF Community Calendar
+  image: https://source.unsplash.com/800x800?community
+  url: http://dashboard.diglib.org
+  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  groups: events, profesional-development
