@@ -54,3 +54,27 @@
   groups:
     - events
     - professional-development
+
+- name: DLF Organizers' Toolkit
+  image: https://source.unsplash.com/400x400?community
+  url: https://wiki.diglib.org/Main_Page
+  description: Start new initiatives or working groups, facilitate ongoing projects or connecting existing ones, and use the DLF as a platform to lift up anything from small conversations to sweeping movements.
+  groups:
+    - toolkits
+    - dlf-groups
+
+- name: Digitizing Special Formats
+  image: https://source.unsplash.com/400x400?computer
+  url: https://wiki.diglib.org/Digitizing_Special_Formats
+  description: A list of resources is curated by the Digital Library Federation for the benefit of cultural heritage professionals planning projects involving the digitization of rare and unique materials.
+  groups:
+    - best-practices
+    - reports
+
+- name: Valuing Labor in Digital Humanities
+  image: https://source.unsplash.com/400x400?work
+  url: https://docs.google.com/document/d/150-mhgyn5-MKxIXhxthOy6E6EuZsKbAo2PZS1nqcOE8/edit#heading=h.imgsi07xhn3e
+  description: A research agenda for valuing labor.
+  groups:
+    - dlf-groups
+    - reports
