@@ -1,53 +1,164 @@
-<section class="bg-gray" id="projects">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <h3>DLF Dashboard</h3>
-                <h4>Collaborative. Collegial. Creative.</h4>
-                <p class="content-detail">Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.</p>
-                <p class="content-detail"></p>
-                <h5>Filter by</h5>
+<!--=================== masaonry portfolio start====================-->
+<div class="grid img-container justify-content-center no-gutters">
+    <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
+    {% for project in site.data.projects %}
 
-                <ul id="filtr-container" class="filter_nav">
-                    <li data-filter="*" class="active"><a href="javascript:void(0)">all</a></li>
-                    <li data-filter=".dlf-groups"> <a href="javascript:void(0)">Groups</a></li>
-                    <li data-filter=".dlf-affiliates"><a href="javascript:void(0)">Affiliates</a></li>
-                    <li data-filter=".best-practices"><a href="javascript:void(0)">Best Practices</a></li>
-                    <li data-filter=".toolkits"><a href="javascript:void(0)">Toolkits</a></li>
-                    <li data-filter=".professional-development"><a href="javascript:void(0)">Professional Development</a></li>
-                    <li data-filter=".visualizations"><a href="javascript:void(0)">Visualizations</a></li>
-                    <li data-filter=".reports"><a href="javascript:void(0)">Reports &amp; Grey Literature</a></li>
-                    <li data-filter=".events"><a href="javascript:void(0)">Events</a></li>
-                </ul>
-            </div>
-
-            <!-- TODO: fix for mobile -->
-            <div class="col-9">
-                <div class="portfolio">
-                    <div class="container-fluid">
-                        <div class="grid img-container justify-content-center no-gutters">
-                            <div class="grid-sizer col-sm-12 col-md-6 col-lg-3"></div>
-                            {% for project in site.data.projects %}
-                            <div class="grid-item branding {{ project.groups | join: " " }} col-sm-12 col-md-6 col-lg-3">
-                                <a href="{{ project.url }}" title="{{ project.name }}">
-                                    <div class="project_box_one">
-                                        <img src="{{ project.image }}" alt="{{ project.name }}" />
-                                        <div class="product_info">
-                                            <div class="product_info_text">
-                                                <div class="product_info_text_inner">
-                                                    <i class="ion ion-plus"></i>
-                                                    <h4>{{ project.name }} </h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-                            {% endfor %}
+    {% if project.size %}
+        {% assign size = project.size %}
+    {% else %}
+        {% assign size = "col-sm-12 col-md-6 col-lg-3" %}
+    {% endif %}
+    <div class="grid-item {{ size }} {{ project.groups | join: " " }}">
+        <a href="{{ project.url }}" title="{{ project.name }}">
+            <div class="project_box_one">
+                <img src="{{ project.image }}" alt="{{ project.name }}" />
+                <div class="product_info">
+                    <div class="product_info_text">
+                        <div class="product_info_text_inner">
+                            <i class="ion ion-plus"></i>
+                            <h4>{{ project.name }} </h4>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </a>
     </div>
-</section>
+    {% endfor %}
+</div>
+
+<!-- <div class="grid-item branding  ">
+    <a href="assets/img/portfolio/home-port1.png" title="project name 1">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port1.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  branding architecture  col-sm-12 col-md-6">
+    <a href="assets/img/portfolio/home-port2.png" title="project name 2">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port2.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  design col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port3.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port3.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  photography design col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port4.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port4.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  branding photography  col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port5.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port5.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item   architecture design col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port6.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port6.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  photography architecture col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port7.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port7.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item  branding design  col-sm-12 col-md-6 col-lg-3">
+    <a href="assets/img/portfolio/home-port8.png" title="project name 5">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port8.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div>
+<div class="grid-item architecture  col-sm-12 col-md-6 col-lg-6">
+    <a href="assets/img/portfolio/home-port9.png" title="project name 4">
+        <div class="project_box_one">
+            <img src="assets/img/portfolio/home-port9.png" alt="pro1" />
+            <div class="product_info">
+                <div class="product_info_text">
+                    <div class="product_info_text_inner">
+                        <i class="ion ion-plus"></i>
+                        <h4>project name</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </a>
+</div> -->
+<!--=================== masaonry portfolio end====================-->

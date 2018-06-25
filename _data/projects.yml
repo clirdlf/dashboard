@@ -4,18 +4,16 @@
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-groups
-    - foo
-    - bar
 
 - name: IRUS-USA
-  image: https://source.unsplash.com/800x400?british
+  image: https://source.unsplash.com/400x400?british
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-affiliates
 
 - name: Design for Diversity
-  image: https://source.unsplash.com/288x288?library
+  image: https://source.unsplash.com/400x400?library
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
@@ -30,7 +28,7 @@
     - toolkits
 
 - name: learn@DLF
-  image: https://source.unsplash.com/collection/488/400x400
+  image: https://source.unsplash.com/400x400?learn
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:

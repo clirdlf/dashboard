@@ -2,16 +2,24 @@
 <html class="no-js" lang="en">
 {% include head.html %}
 <body>
-<!--[if lte IE 9]>
+    <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-<![endif]-->
-<div class="loader">
-    <div class="loader-outter"></div>
-    <div class="loader-inner"></div>
-</div>
-{% include  navigation.html %}
-{{ content }}
-{% include footer.html %}
+    <![endif]-->
+    <div class="loader">
+        <div class="loader-outter"></div>
+        <div class="loader-inner"></div>
+    </div>
+    <div class="body-container container-fluid">
+        {% include  navigation.html %}
+        <div class="col-lg-10 col-md-9 col-12 body_block align-content-center">
+            <div class="portfolio">
+                <div class="container-fluid">
+                    {{ content }}
+                </div>
+            </div>
+        </div>
+        {% include footer.html %}
+    </div>
 </body>
 
 </html>
