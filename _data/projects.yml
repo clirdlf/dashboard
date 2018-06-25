@@ -1,7 +1,7 @@
 - name: Digitization Cost Calculator
   image: https://source.unsplash.com/400x800?calculator
   url: http://dashboard.diglib.org
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  description: The Digitization Cost Calculator collects and make freely available a large set of data on the time it takes to perform various tasks involved in the digitization process, in order to assist organizations in digitization project planning and benchmarking.
   groups:
     - dlf-groups
 
@@ -11,6 +11,7 @@
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-affiliates
+    - visualizations
 
 - name: Design for Diversity
   image: https://source.unsplash.com/400x400?library
@@ -19,25 +20,37 @@
   groups:
     - dlf-affiliates
     - best-practices
+    - toolkits
 
 - name: Metadata Application Profile Clearinghouse
   image: https://source.unsplash.com/collection/488/400x400
-  url: http://dashboard.diglib.org
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  url: https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/
+  description: A collection of application profiles for digital collections.
+  groups:
+    - dlf-groups
+
+- name: DLF AIG Metadata Working Group Toolkit
+  image: https://source.unsplash.com/collection/488/400x400
+  url: https://dlfmetadataassessment.github.io/
+  description: The DLF AIG Metadata Working Group collaboratively builds guidelines, best practices, tools and workflows around the evaluation and assessment of metadata used by and for digital libraries and repositories.
   groups:
     - toolkits
+    - dlf-groups
+    - best-practices
+    - reports
 
-- name: learn@DLF
+- name: Learn@DLF Clearinghouse
   image: https://source.unsplash.com/400x400?learn
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - toolkits
+    - professional-development
 
 - name: DLF Community Calendar
   image: https://source.unsplash.com/400x400?community
-  url: http://dashboard.diglib.org
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  url: http://digital-conferences-calendar.info/
+  description: What's on in digital libraries & archives, DH, museums & cultural heritage, data curation, open science, digital publishing & more?
   groups:
     - events
-    - profesional-development
+    - professional-development
