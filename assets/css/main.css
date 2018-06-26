@@ -1984,7 +1984,7 @@ img {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  cursor: crosshair;
+  cursor: pointer;
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
 }

@@ -4,7 +4,7 @@
   position: relative;
   overflow: hidden;
   margin: 0 auto;
-  cursor:crosshair;
+  cursor:pointer;
   @include single-transition(all , ease-in-out , 0.4s);
   img{
     display: block;
