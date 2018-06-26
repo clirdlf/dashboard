@@ -4,6 +4,7 @@
   description: The Digitization Cost Calculator collects and make freely available a large set of data on the time it takes to perform various tasks involved in the digitization process, in order to assist organizations in digitization project planning and benchmarking.
   groups:
     - dlf-groups
+    - featured
 
 - name: IRUS-USA
   image: https://source.unsplash.com/400x400?british
@@ -12,6 +13,7 @@
   groups:
     - dlf-affiliates
     - visualizations
+    - featured
 
 - name: Design for Diversity
   image: https://source.unsplash.com/400x400?library
@@ -21,6 +23,7 @@
     - dlf-affiliates
     - best-practices
     - toolkits
+    - featured
 
 - name: Metadata Application Profile Clearinghouse
   image: https://source.unsplash.com/collection/488/400x400
