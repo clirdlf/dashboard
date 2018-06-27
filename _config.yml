@@ -18,13 +18,15 @@ email: info@diglib.org
 description: Tools and resources from DLF Groups and Affiliates, designed to foster our community of practice and get work done.
 baseurl: "/dashboard" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
+keywords: "DLF, Projects"
 
 sass:
+  sass_dir: assets/scss/
   style: compressed
 
 # For https://github.com/jekyll/jekyll-seo-tag
 author:
-logo: /images/logo.png
+  logo: /images/logo.png
 
 social:
   name: Digital Library Federation

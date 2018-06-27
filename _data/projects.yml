@@ -1,5 +1,5 @@
 - name: Digitization Cost Calculator
-  image: https://source.unsplash.com/400x800?calculator
+  image: /images/projects/800x400.jpg
   url: http://dashboard.diglib.org
   description: The Digitization Cost Calculator collects and make freely available a large set of data on the time it takes to perform various tasks involved in the digitization process, in order to assist organizations in digitization project planning and benchmarking.
   groups:
@@ -7,8 +7,9 @@
     - featured
 
 - name: IRUS-USA
-  image: https://source.unsplash.com/400x400?british
+  image: https://source.unsplash.com/800x400?british
   url: http://dashboard.diglib.org
+  sizes: col-sm-12 col-md-6
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-affiliates
@@ -57,14 +58,17 @@
   groups:
     - events
     - professional-development
+    - featured
 
 - name: DLF Organizers' Toolkit
-  image: https://source.unsplash.com/400x400?community
+  image: https://source.unsplash.com/800x400?community
+  sizes: col-sm-12 col-md-6
   url: https://wiki.diglib.org/Main_Page
   description: Start new initiatives or working groups, facilitate ongoing projects or connecting existing ones, and use the DLF as a platform to lift up anything from small conversations to sweeping movements.
   groups:
     - toolkits
     - dlf-groups
+    - featured
 
 - name: Digitizing Special Formats
   image: https://source.unsplash.com/400x400?computer

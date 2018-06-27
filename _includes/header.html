@@ -1,0 +1,25 @@
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{ site.keywords }}{% endif %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- ========== Title ========== -->
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <link rel="manifest" href="{{ '/site.webmanifest' | prepend: site.baseurl }}">
+    <link rel="apple-touch-icon" href="{{ '/icon.png' | prepend: site.baseurl }}">
+
+    <!-- ========== Favicon Ico ========== -->
+    <!--<link rel="icon" href="fav.ico">-->
+    <!-- ========== STYLESHEETS ========== -->
+    <!-- Bootstrap CSS -->
+    <link href="{{ '/assets/css/bootstrap.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <!-- Fonts Icon CSS -->
+    <link href="{{ '/assets/css/font-awesome.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/assets/css/et-line.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <link href="{{ '/assets/css/ionicons.min.css' | prepend: site.baseurl }}" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="{{ '/css/main.css' | prepend: site.baseurl }}" rel="stylesheet">
+</head>

@@ -1,26 +1,21 @@
-<a class="menu-btn" href="javascript:void(0)">
-  <ion-icon name="menu"></ion-icon>
-</a>
-<div class="row justify-content-center">
-  <!--=================== side menu ====================-->
-  <div class="col-lg-2 col-md-3 col-12 menu_block">
-
+<!--=================== side menu ====================-->
+<div class="col-lg-2 col-md-3 col-12 menu_block">
     <!--logo -->
     <div class="logo_box">
-      <a href="index.html">
-        <img src="{{ '/images/DLF-dashboard-placeholder.png' | prepend: site.baseurl }}" alt="DLF-logo-white">
-      </a>
+        <a href="/">
+            <img src="{{ '/images/DLF-dashboard-placeholder.png' | prepend: site.baseurl }}" alt="DLF Logo">
+        </a>
     </div>
     <!--logo end-->
 
     {% include page_list.html %}
 
-    {% if page.url == '/' %}
+     {% if page.url == '/' %}
     <!--filter menu -->
     <div class="side_menu_section">
       <h4 class="side_title">filter by:</h4>
-      <ul  id="filtr-container"  class="filter_nav">
-        <li data-filter=".featured" class="active"><a href="javascript:void(0)">All</a></li>
+      <ul id="filtr-container" class="filter_nav">
+        <li data-filter=".featured" class="active"><a href="javascript:void(0)">Featured</a></li>
         <li data-filter="*"><a href="javascript:void(0)">All</a></li>
         <li data-filter=".dlf-groups"> <a href="javascript:void(0)">Groups</a></li>
         <li data-filter=".dlf-affiliates"><a href="javascript:void(0)">Affiliates</a></li>
@@ -40,16 +35,17 @@
       <div class="side_menu_bottom_inner">
         <ul class="social_menu">
           <li>
-            <a href="https://www.instagram.com/clirdlf/"> <ion-icon name="logo-instagram" style="color:white"></ion-icon></i> </a>
+              <!-- TODO: create an ion-icon class -->
+            <a href="https://www.instagram.com/clirdlf/"> <ion-icon name="logo-instagram" class="color-light"></ion-icon></i> </a>
           </li>
           <li>
-            <a href="https://www.facebook.com/CLIRDLF"> <ion-icon name="logo-facebook" style="color:white"></ion-icon> </a>
+            <a href="https://www.facebook.com/CLIRDLF"> <ion-icon name="logo-facebook" class="color-light"></ion-icon> </a>
           </li>
           <li>
-            <a href="https://twitter.com/clirdlf"> <ion-icon name="logo-twitter" style="color:white"></ion-icon> </a>
+            <a href="https://twitter.com/clirdlf"> <ion-icon name="logo-twitter" class="color-light"></ion-icon> </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/digital-library-federation"> <ion-icon name="logo-linkedin" style="color:white"></ion-icon> </a>
+            <a href="https://www.linkedin.com/company/digital-library-federation"> <ion-icon name="logo-linkedin" class="color-light"></ion-icon> </a>
           </li>
         </ul>
         <div class="copy_right">
@@ -60,6 +56,5 @@
       </div>
     </div>
     <!--social and copyright end -->
-
-  </div>
-  <!--=================== side menu end====================-->
+</div>
+<!--=================== side menu end====================-->
