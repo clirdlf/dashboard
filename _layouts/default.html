@@ -11,15 +11,12 @@
     </div>
     <div class="body-container container-fluid">
         {% include navigation.html %}
-        <div class="col-lg-10 col-md-9 col-12 body_block align-content-center">
-            <div class="portfolio">
-                <div class="container-fluid">
-                    {{ content }}
-                </div>
-            </div>
-        </div>
-        {% include footer.html %}
+        <!--=================== content body ====================-->
+        {{ content }}
+        <!--=================== content body end ================-->
     </div>
+
+    {% include footer.html %}
 </body>
 
 </html>
