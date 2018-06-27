@@ -3,3 +3,4 @@ config.json
 node_modules/
 _site/
 js/src/build/
+.DS_Store
