@@ -1,21 +1,25 @@
-var gulp = require('gulp');
+var gulp        = require('gulp');
 var browserSync = require('browser-sync');
-var sass = require('gulp-sass');
-var prefix = require('gulp-autoprefixer');
-var cp = require('child_process');
-var sourcemaps = require('gulp-sourcemaps');
-var include = require('gulp-include');
+var sass        = require('gulp-sass');
+var prefix      = require('gulp-autoprefixer');
+var cp          = require('child_process');
+var sourcemaps  = require('gulp-sourcemaps');
+var include     = require('gulp-include');
 //@see https://www.npmjs.com/package/gulp-uglify
-var uglify = require('gulp-uglify');
-var pump = require('pump');
-var modernizr = require('gulp-modernizr');
+var uglify      = require('gulp-uglify');
+var pump        = require('pump');
+var modernizr   = require('gulp-modernizr');
 
 // @see https://gist.github.com/LoyEgor/e9dba0725b3ddbb8d1a68c91ca5452b5
-var imagemin = require('gulp-imagemin');
+var imagemin         = require('gulp-imagemin');
 var imageminPngquant = require('imagemin-pngquant');
-var imageminZopfli = require('imagemin-zopfli');
-var imageminMozjpeg = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
+var imageminZopfli   = require('imagemin-zopfli');
+var imageminMozjpeg  = require('imagemin-mozjpeg'); //need to run 'brew install libpng'
 var imageminGiflossy = require('imagemin-giflossy');
+
+// @see https://www.npmjs.com/package/gulp-image-resize
+var imageResize = require('gulp-image-resize');
+var rename      = require("gulp-rename");
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -154,6 +158,21 @@ gulp.task('imagemin', function() {
             })
         ]));
     // .pipe(gulp.dest('lib'));
+});
+
+gulp.task('resize', function(){
+    gulp.src('images/projects/**/*.{gif,jpg,png}')
+        .pipe(imageResize({
+            width: 400,
+            height: 400,
+            crop: true,
+            gravity: 'center',
+            format: 'jpeg',
+            upscale: false,
+            imageMagick: true
+        }))
+        .pipe(rename(function (path) { path.basename += "-thumbnail"; }))
+        .pipe(gulp.dest('images/projects/'))
 });
 
 /**
