@@ -16,7 +16,7 @@ javascript: /js/projects_filter.js
       <div class="grid-item {{ project.sizes | default: size }} {{ project.groups | join: " " }}">
         <a href="{{ project.url }}" title="{{ project.name }}">
           <div class="project_box_one">
-            <img src="{{ project.image }}" alt="pro1" />
+            <img src="/images/projects/thumbnails/{{ project.image }}" alt="pro1" />
             <div class="product_info">
               <div class="product_info_text">
                 <div class="product_info_text_inner">
@@ -30,9 +30,6 @@ javascript: /js/projects_filter.js
       </div>
       {% endfor %}
       <!-- end grid items -->
-
-
-
 
     </div>
     <!--=================== masaonry portfolio end====================-->

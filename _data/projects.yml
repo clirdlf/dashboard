@@ -1,5 +1,5 @@
 - name: Digitization Cost Calculator
-  image: /images/projects/800x400.jpg
+  image: calculator.jpg
   url: http://dashboard.diglib.org
   description: The Digitization Cost Calculator collects and make freely available a large set of data on the time it takes to perform various tasks involved in the digitization process, in order to assist organizations in digitization project planning and benchmarking.
   groups:
@@ -7,9 +7,8 @@
     - featured
 
 - name: IRUS-USA
-  image: https://source.unsplash.com/800x400?british
+  image: irus-usa.jpg
   url: http://dashboard.diglib.org
-  sizes: col-sm-12 col-md-6
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-affiliates
@@ -17,8 +16,9 @@
     - featured
 
 - name: Design for Diversity
-  image: https://source.unsplash.com/400x400?library
+  image: d4d.jpg
   url: http://dashboard.diglib.org
+  sizes: col-sm-12 col-md-6
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - dlf-affiliates
@@ -27,14 +27,14 @@
     - featured
 
 - name: Metadata Application Profile Clearinghouse
-  image: https://source.unsplash.com/collection/488/400x400
+  image: 400x400.jpg
   url: https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/
   description: A collection of application profiles for digital collections.
   groups:
     - dlf-groups
 
 - name: DLF AIG Metadata Working Group Toolkit
-  image: https://source.unsplash.com/collection/488/400x400
+  image: 400x400.jpg
   url: https://dlfmetadataassessment.github.io/
   description: The DLF AIG Metadata Working Group collaboratively builds guidelines, best practices, tools and workflows around the evaluation and assessment of metadata used by and for digital libraries and repositories.
   groups:
@@ -44,7 +44,7 @@
     - reports
 
 - name: Learn@DLF Clearinghouse
-  image: https://source.unsplash.com/400x400?learn
+  image: 400x400.jpg
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
@@ -52,7 +52,7 @@
     - professional-development
 
 - name: DLF Community Calendar
-  image: https://source.unsplash.com/400x400?community
+  image: 400x400.jpg
   url: http://digital-conferences-calendar.info/
   description: What's on in digital libraries & archives, DH, museums & cultural heritage, data curation, open science, digital publishing & more?
   groups:
@@ -61,7 +61,7 @@
     - featured
 
 - name: DLF Organizers' Toolkit
-  image: https://source.unsplash.com/800x400?community
+  image: 800x400.jpg
   sizes: col-sm-12 col-md-6
   url: https://wiki.diglib.org/Main_Page
   description: Start new initiatives or working groups, facilitate ongoing projects or connecting existing ones, and use the DLF as a platform to lift up anything from small conversations to sweeping movements.
@@ -71,7 +71,7 @@
     - featured
 
 - name: Digitizing Special Formats
-  image: https://source.unsplash.com/400x400?computer
+  image: 400x400.jpg
   url: https://wiki.diglib.org/Digitizing_Special_Formats
   description: A list of resources is curated by the Digital Library Federation for the benefit of cultural heritage professionals planning projects involving the digitization of rare and unique materials.
   groups:
@@ -79,7 +79,7 @@
     - reports
 
 - name: Valuing Labor in Digital Humanities
-  image: https://source.unsplash.com/400x400?work
+  image: 400x400.jpg
   url: https://docs.google.com/document/d/150-mhgyn5-MKxIXhxthOy6E6EuZsKbAo2PZS1nqcOE8/edit#heading=h.imgsi07xhn3e
   description: A research agenda for valuing labor.
   groups:

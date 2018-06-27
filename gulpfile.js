@@ -19,7 +19,9 @@ var imageminGiflossy = require('imagemin-giflossy');
 
 // @see https://www.npmjs.com/package/gulp-image-resize
 var imageResize = require('gulp-image-resize');
-var rename      = require("gulp-rename");
+// var rename      = require("gulp-rename");
+var parallel    = require("concurrent-transform");
+var os          = require("os");
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -27,26 +29,26 @@ var messages = {
 };
 
 /**
- * Build the Jekyll Site
- */
+* Build the Jekyll Site
+*/
 gulp.task('jekyll-build', function(done) {
     browserSync.notify(messages.jekyllBuild);
     return cp.spawn(jekyll, ['build', '--baseurl', ''], {
-            stdio: 'inherit'
-        })
-        .on('close', done);
+        stdio: 'inherit'
+    })
+    .on('close', done);
 });
 
 /**
- * Rebuild Jekyll & do page reload
- */
+* Rebuild Jekyll & do page reload
+*/
 gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
     browserSync.reload();
 });
 
 /**
- * Wait for jekyll-build, then launch the Server
- */
+* Wait for jekyll-build, then launch the Server
+*/
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
     browserSync({
         server: {
@@ -57,8 +59,8 @@ gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
 });
 
 /**
- * Compile JS files from js/scripts.js using gulp-include
- */
+* Compile JS files from js/scripts.js using gulp-include
+*/
 gulp.task('scripts', function(cb) {
     pump(
         [
@@ -71,114 +73,161 @@ gulp.task('scripts', function(cb) {
 });
 
 /**
- * Compress and uglify JavaScript files
- */
+* Compress and uglify JavaScript files
+*/
 gulp.task('compress', function(cb) {
     pump([
-            gulp.src('js/src/build/*.js'),
-            sourcemaps.init(),
-            uglify(),
-            sourcemaps.write(),
-            gulp.dest('js')
-        ],
-        cb
-    );
+        gulp.src('js/src/build/*.js'),
+        sourcemaps.init(),
+        uglify(),
+        sourcemaps.write(),
+        gulp.dest('js')
+    ],
+    cb
+);
 });
 
 
 /**
- * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
- */
+* Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+*/
 gulp.task('sass', function() {
     return gulp.src('_sass/main.scss')
-        .pipe(sass({
-            // includePaths: ['scss'],
-            onError: browserSync.notify,
-            outputStyle: 'compressed'
-        }))
-        .pipe(gulp.dest('_site/css'))
-        .pipe(gulp.dest('css'))
-        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
-            cascade: true
-        }))
-        .pipe(browserSync.reload({
-            stream: true
-        }));
+    .pipe(sass({
+        // includePaths: ['scss'],
+        onError: browserSync.notify,
+        outputStyle: 'compressed'
+    }))
+    .pipe(gulp.dest('_site/css'))
+    .pipe(gulp.dest('css'))
+    .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
+        cascade: true
+    }))
+    .pipe(browserSync.reload({
+        stream: true
+    }));
     // .pipe(gulp.dest('css'));
 });
 
 /**
- * Build modernizr
- */
+* Build modernizr
+*/
 gulp.task('modernizr', function() {
     gulp.src('./js/*.js')
-        .pipe(modernizr())
-        .pipe(uglify())
-        .pipe(gulp.dest("js/vendor/"));
+    .pipe(modernizr())
+    .pipe(uglify())
+    .pipe(gulp.dest("js/vendor/"));
 });
 
 /**
- * Minifiy images
- */
+* Minifiy images
+*/
 gulp.task('imagemin', function() {
     return gulp.src(['images/**/*.{gif,png,jpg,svg}'])
-        .pipe(imagemin([
-            //png
-            imageminPngquant({
-                speed: 1,
-                quality: 98 //lossy settings
-            }),
-            imageminZopfli({
-                more: true
-            }),
-            //gif
-            // imagemin.gifsicle({
-            //     interlaced: true,
-            //     optimizationLevel: 3
-            // }),
-            //gif very light lossy, use only one of gifsicle or Giflossy
-            imageminGiflossy({
-                optimizationLevel: 3,
-                optimize: 3, //keep-empty: Preserve empty transparent frames
-                lossy: 2
-            }),
-            //svg
-            imagemin.svgo({
-                plugins: [{
-                    removeViewBox: false
-                }]
-            }),
-            //jpg lossless
-            imagemin.jpegtran({
-                progressive: true
-            }),
-            //jpg very light lossy, use vs jpegtran
-            imageminMozjpeg({
-                quality: 90
-            })
-        ]));
+    .pipe(imagemin([
+        //png
+        imageminPngquant({
+            speed: 1,
+            quality: 98 //lossy settings
+        }),
+        imageminZopfli({
+            more: true
+        }),
+        //gif
+        // imagemin.gifsicle({
+        //     interlaced: true,
+        //     optimizationLevel: 3
+        // }),
+        //gif very light lossy, use only one of gifsicle or Giflossy
+        imageminGiflossy({
+            optimizationLevel: 3,
+            optimize: 3, //keep-empty: Preserve empty transparent frames
+            lossy: 2
+        }),
+        //svg
+        imagemin.svgo({
+            plugins: [{
+                removeViewBox: false
+            }]
+        }),
+        //jpg lossless
+        imagemin.jpegtran({
+            progressive: true
+        }),
+        //jpg very light lossy, use vs jpegtran
+        imageminMozjpeg({
+            quality: 90
+        })
+    ]));
     // .pipe(gulp.dest('lib'));
 });
 
 gulp.task('resize', function(){
-    gulp.src('images/projects/**/*.{gif,jpg,png}')
-        .pipe(imageResize({
+    gulp.src('images/projects/originals/800x400/**/*.{gif,jpg,png}')
+    .pipe(parallel(
+        imageResize({
+            width: 800,
+            height: 400,
+            crop: true,
+            gravity: 'center',
+            format: 'jpg',
+            upscale: false,
+            imageMagick: true
+        }),
+        os.cpus().length
+    ))
+    .pipe(gulp.dest('images/projects/'));
+
+    gulp.src('images/projects/originals/400x800/**/*.{gif,jpg,png}')
+    .pipe(parallel(
+        imageResize({
+            width: 400,
+            height: 800,
+            crop: true,
+            gravity: 'center',
+            format: 'jpg',
+            upscale: false,
+            imageMagick: true
+        }),
+        os.cpus().length
+    ))
+    .pipe(gulp.dest('images/projects/'));
+
+    gulp.src('images/projects/originals/400x400/**/*.{gif,jpg,png}')
+    .pipe(parallel(
+        imageResize({
             width: 400,
             height: 400,
             crop: true,
             gravity: 'center',
-            format: 'jpeg',
+            format: 'jpg',
             upscale: false,
             imageMagick: true
-        }))
-        .pipe(rename(function (path) { path.basename += "-thumbnail"; }))
-        .pipe(gulp.dest('images/projects/'))
+        }),
+        os.cpus().length
+    ))
+    .pipe(gulp.dest('images/projects/'));
+
+    gulp.src('images/projects/*.{gif,jpg,png}')
+    .pipe(parallel(
+        imageResize({
+            width: 400,
+            height: 400,
+            crop: true,
+            gravity: 'center',
+            format: 'jpg',
+            upscale: false,
+            imageMagick: true
+        }),
+        os.cpus().length
+    ))
+    .pipe(gulp.dest('images/projects/thumbnails/'));
 });
 
 /**
- * Watch scss files for changes & recompile
- * Watch html/md files, run jekyll & reload BrowserSync
- */
+* Watch scss files for changes & recompile
+* Watch html/md files, run jekyll & reload BrowserSync
+*/
 gulp.task('watch', function() {
     gulp.watch('assets/**/*.scss', ['sass', 'jekyll-rebuild']);
     // gulp.watch('assets/scss/*.scss', ['sass', 'jekyll-rebuild']);
@@ -189,7 +238,7 @@ gulp.task('watch', function() {
 });
 
 /**
- * Default task, running just `gulp` will compile the sass,
- * compile the jekyll site, launch BrowserSync & watch files.
- */
+* Default task, running just `gulp` will compile the sass,
+* compile the jekyll site, launch BrowserSync & watch files.
+*/
 gulp.task('default', ['browser-sync', 'watch']);
