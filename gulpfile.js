@@ -8,7 +8,6 @@ var include     = require('gulp-include');
 //@see https://www.npmjs.com/package/gulp-uglify
 var uglify      = require('gulp-uglify');
 var pump        = require('pump');
-var modernizr   = require('gulp-modernizr');
 
 // @see https://gist.github.com/LoyEgor/e9dba0725b3ddbb8d1a68c91ca5452b5
 var imagemin         = require('gulp-imagemin');
@@ -18,10 +17,10 @@ var imageminMozjpeg  = require('imagemin-mozjpeg'); //need to run 'brew install 
 var imageminGiflossy = require('imagemin-giflossy');
 
 // @see https://www.npmjs.com/package/gulp-image-resize
-var imageResize = require('gulp-image-resize');
-// var rename      = require("gulp-rename");
-var parallel    = require("concurrent-transform");
-var os          = require("os");
+var imageResize      = require('gulp-image-resize');
+// var rename           = require("gulp-rename");
+var parallel         = require("concurrent-transform");
+var os               = require("os");
 
 var jekyll = process.platform === 'win32' ? 'jekyll.bat' : 'jekyll';
 var messages = {
@@ -93,11 +92,12 @@ gulp.task('compress', function(cb) {
 */
 gulp.task('sass', function() {
     return gulp.src('_sass/main.scss')
+    .pipe(sourcemaps.init())
     .pipe(sass({
         // includePaths: ['scss'],
         onError: browserSync.notify,
         outputStyle: 'compressed'
-    }))
+    }).on('error', sass.logError))
     .pipe(gulp.dest('_site/css'))
     .pipe(gulp.dest('css'))
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
@@ -107,16 +107,6 @@ gulp.task('sass', function() {
         stream: true
     }));
     // .pipe(gulp.dest('css'));
-});
-
-/**
-* Build modernizr
-*/
-gulp.task('modernizr', function() {
-    gulp.src('./js/*.js')
-    .pipe(modernizr())
-    .pipe(uglify())
-    .pipe(gulp.dest("js/vendor/"));
 });
 
 /**
