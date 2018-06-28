@@ -10,7 +10,7 @@
 <script src="{{ '/assets/js/isotope.js' | prepend: site.baseurl }}"></script>
 
 {% for js in page.javascript %}
-   <script src="{{ js }}"></script>
+   <script src="{{ js | prepend: site.baseurl }}"></script>
 {% endfor %}
 
 <!-- Custom js -->

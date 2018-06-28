@@ -15,7 +15,7 @@ $(document).ready(function() {
   $grid.imagesLoaded().progress( function() {
     $grid.isotope('layout');
   });
-  
+
   $('#filtr-container').on( 'click', 'li', function(e) {
     e.preventDefault();
     $('#filtr-container li').removeClass('active');
@@ -23,4 +23,5 @@ $(document).ready(function() {
     var filterValue = $(this).attr('data-filter');
     $grid.isotope({ filter: filterValue });
   });
+
 });
