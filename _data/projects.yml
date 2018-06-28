@@ -26,15 +26,8 @@
     - toolkits
     - featured
 
-- name: Metadata Application Profile Clearinghouse
-  image: 400x400.jpg
-  url: https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/
-  description: A collection of application profiles for digital collections.
-  groups:
-    - dlf-groups
-
 - name: DLF AIG Metadata Working Group Toolkit
-  image: 400x400.jpg
+  image: metadata-1.jpg
   url: https://dlfmetadataassessment.github.io/
   description: The DLF AIG Metadata Working Group collaboratively builds guidelines, best practices, tools and workflows around the evaluation and assessment of metadata used by and for digital libraries and repositories.
   groups:
@@ -44,30 +37,32 @@
     - reports
 
 - name: Learn@DLF Clearinghouse
-  image: 400x400.jpg
+  image: learn-at-dlf.jpg
+  sizes: col-sm-12 col-md-6
   url: http://dashboard.diglib.org
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
     - toolkits
     - professional-development
-
-- name: DLF Community Calendar
-  image: 400x400.jpg
-  url: http://digital-conferences-calendar.info/
-  description: What's on in digital libraries & archives, DH, museums & cultural heritage, data curation, open science, digital publishing & more?
-  groups:
-    - events
-    - professional-development
     - featured
 
 - name: DLF Organizers' Toolkit
-  image: 800x400.jpg
-  sizes: col-sm-12 col-md-6
+  image: 400x400.jpg
   url: https://wiki.diglib.org/Main_Page
   description: Start new initiatives or working groups, facilitate ongoing projects or connecting existing ones, and use the DLF as a platform to lift up anything from small conversations to sweeping movements.
   groups:
     - toolkits
     - dlf-groups
+    - featured
+
+- name: DLF Community Calendar
+  image: 800x400.jpg
+  sizes: col-sm-12 col-md-6
+  url: http://digital-conferences-calendar.info/
+  description: What's on in digital libraries & archives, DH, museums & cultural heritage, data curation, open science, digital publishing & more?
+  groups:
+    - events
+    - professional-development
     - featured
 
 - name: Digitizing Special Formats
@@ -85,3 +80,29 @@
   groups:
     - dlf-groups
     - reports
+
+- name: Metadata Application Profile Clearinghouse
+  image: 400x400.jpg
+  url: https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/
+  description: A collection of application profiles for digital collections.
+  groups:
+    - dlf-groups
+    - featured
+
+- name: Annotated Bibliography for Cultural Assessment of Digital Collections
+  image: 400x400.jpg
+  url: https://osf.io/94pgj/
+  description: An initial environmental scan surrounding cultural and procedural biases in cultural heritage institutions with a focus on the impact of said biases on digital collections.
+  groups:
+    - reports
+    - dlf-groups
+    - featured
+
+- name: DLF Project Managers Toolkit
+  image: 400x400.jpg
+  url: https://wiki.diglib.org/DLF_Project_Managers_Toolkit
+  description: A crowdsourced collection of information, tips, techniques, and tools for project managers working in digital libraries.
+  groups:
+    - toolkits
+    - professional-development
+    - dlf-groups
