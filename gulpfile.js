@@ -1,5 +1,6 @@
 var gulp        = require('gulp');
-var browserSync = require('browser-sync');
+// var browserSync = require('browser-sync');
+var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
 var cp          = require('child_process');
@@ -49,7 +50,7 @@ gulp.task('jekyll-rebuild', ['jekyll-build'], function() {
 * Wait for jekyll-build, then launch the Server
 */
 gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
-    browserSync({
+    browserSync.init({
         server: {
             baseDir: '_site',
             injectChanges: true
@@ -103,9 +104,11 @@ gulp.task('sass', function() {
     .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {
         cascade: true
     }))
-    .pipe(browserSync.reload({
-        stream: true
-    }));
+    // .pipe(browserSync.reload({
+    //     stream: true
+    // })
+    .pipe(browserSync.stream({match: '**/*.css'})
+    );
     // .pipe(gulp.dest('css'));
 });
 

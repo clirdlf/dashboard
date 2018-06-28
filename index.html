@@ -16,8 +16,7 @@ javascript: /js/landing_page_filter.js
       <div class="grid-item {{ project.sizes | default: size }} {{ project.groups | join: " " }}" >
         <a href="{{ project.url }}" title="{{ project.name }}">
           <div class="project_box_one">
-            {% assign image = "/images/projects/{{ project.image }}" %}
-            <img src="{{ image | prepend: site.baseurl }}" alt="{{ project.name }}" />
+            <img src="{{ '/images/projects/' | prepend: site.baseurl | append: project.image }}" alt="{{ project.name }}" />
             <div class="product_info">
               <div class="product_info_text">
                 <div class="product_info_text_inner">
