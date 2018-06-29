@@ -2,14 +2,96 @@
 layout: default
 title: Contact
 permalink: /contact/
+external_js:
+  - https://maps.googleapis.com/maps/api/js?key=AIzaSyC6si_cqnt3rbANMfcFHYDQmdE5VqnKn2c
 ---
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
 
-<h3>Get in touch with us</h3>
-<h5>Have any questions or suggestions for the DLF Dashboard?
-  We value your input and encourage you to reach out to
-  the whole DLF team or individual staff members directly.</h5>
-<br>
-  <h5><i class="far fa-envelope fa-2x"></i>&nbsp;&nbsp;info@diglib.org</h5>
-  <h5><i class="fas fa-phone fa-2x"></i>&nbsp;&nbsp;(202) 939-4750</h5>
-  <h5><i class="fas fa-globe fa-2x"></i>&nbsp;&nbsp;diglib.org/about/staff</h5>
+<div>
+  <div class="img_card">
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-7 content_section">
+        <!--=================== contact info and form start====================-->
+        <div class="content_box">
+          <div class="content_box_inner">
+            <div>
+              <h3>About</h3>
+              <p>The DLF Dashboard contains tools and resources from DLF Groups and Affiliates,
+                designed to foster our community of practice and get work done.</p>
+
+              <p>Have any questions or suggestions for the DLF Dashboard? <a href="mailto://info@diglib.org">Get in touch!</a></p>
+            </div>
+            <div id="contact">
+              <h3>
+                Get in touch with us
+              </h3>
+              <p>
+                Have any questions or suggestions for the DLF Dashboard?
+                  We value your input and encourage you to reach out to
+                  the whole DLF team or individual staff members directly.
+              </p>
+
+              <ul class="nosyely_list pt50">
+                <li>
+                  <div class="img_box_two">
+                    <img src="{{ '/assets/img/icons/satelite.png' | prepend: site.baseurl }}" alt="info list">
+                    <div class="content align-items-center">
+                      <p>
+                        1707 L St. NW<br/>
+                        Suite 650 <br>
+                        Washington, DC, 22306
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="img_box_two">
+                    <img src="{{ '/assets/img/icons/scheme.png' | prepend: site.baseurl }}" alt="info list">
+                    <div class="content align-items-center">
+                      <p>
+                        info@diglib.org
+                      </p>
+                    </div>
+                  </div>
+                </li>
+                <!-- <li>
+                  <div class="img_box_two">
+                    <img src="{{ '/assets/img/icons/smartphone.png' | prepend: site.baseurl }}" alt="info list">
+                    <div class="content align-items-center">
+                      <p>
+                        +5463 834 53 2245
+                      </p>
+                    </div>
+                  </div>
+                </li> -->
+              </ul>
+
+              <!-- <div class="mt75 row justify-content-center">
+                <div class="col-lg-6 col-12">
+                  <input type="text" placeholder="Name" class="form-control">
+                </div>
+                <div class="col-lg-6 col-12">
+                  <input type="email" placeholder="E-Mail" class="form-control">
+                </div>
+                <div class="col-12">
+                  <input type="text" placeholder="Subject" class="form-control">
+                </div>
+                <div class="col-12">
+                  <textarea  placeholder="Massage" class="form-control" cols="4" rows="4"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send</button>
+                </div>
+              </div> -->
+            </div>
+          </div>
+        </div>
+        <!--=================== contact info and form end====================-->
+      </div>
+      <div class="col-md-6 col-5 img_section" style="background-color:#000;">
+        <!--map -->
+        <div id="map" data-lon="-77.0391" data-lat="38.903748" class="map"></div>
+        <!--map end-->
+      </div>
+    </div>
+  </div>
+</div>
