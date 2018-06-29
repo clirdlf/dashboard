@@ -82,7 +82,7 @@
     - reports
 
 - name: Metadata Application Profile Clearinghouse
-  image: 400x400.jpg
+  image: metadata-clearinghouse.jpg
   url: https://dlfmetadataassessment.github.io/MetadataSpecsClearinghouse/
   description: A collection of application profiles for digital collections.
   groups:
@@ -96,7 +96,6 @@
   groups:
     - reports
     - dlf-groups
-    - featured
 
 - name: DLF Project Managers Toolkit
   image: project-manager.jpg
@@ -106,6 +105,7 @@
     - toolkits
     - professional-development
     - dlf-groups
+    - featured
 
 - name: DLF Forum
   image: forum.jpg
