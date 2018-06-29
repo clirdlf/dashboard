@@ -47,7 +47,7 @@
     - featured
 
 - name: DLF Organizers' Toolkit
-  image: 400x400.jpg
+  image: organizer-toolkit.jpg
   url: https://wiki.diglib.org/Main_Page
   description: Start new initiatives or working groups, facilitate ongoing projects or connecting existing ones, and use the DLF as a platform to lift up anything from small conversations to sweeping movements.
   groups:
@@ -56,7 +56,7 @@
     - featured
 
 - name: DLF Community Calendar
-  image: 800x400.jpg
+  image: calendar.jpg
   sizes: col-sm-12 col-md-6
   url: http://digital-conferences-calendar.info/
   description: What's on in digital libraries & archives, DH, museums & cultural heritage, data curation, open science, digital publishing & more?
@@ -99,7 +99,7 @@
     - featured
 
 - name: DLF Project Managers Toolkit
-  image: 400x400.jpg
+  image: project-manager.jpg
   url: https://wiki.diglib.org/DLF_Project_Managers_Toolkit
   description: A crowdsourced collection of information, tips, techniques, and tools for project managers working in digital libraries.
   groups:
