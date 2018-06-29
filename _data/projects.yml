@@ -106,3 +106,10 @@
     - toolkits
     - professional-development
     - dlf-groups
+
+- name: DLF Forum
+  image: forum.jpg
+  url: https://www.diglib.org/dlf-events
+  description: Our DLF Forum includes digital library practitioners from member institutions and the broader community, for whom it serves as a meeting place, marketplace, and congress.
+  groups:
+    - events
