@@ -17,7 +17,7 @@
 
 - name: Design for Diversity
   image: d4d.jpg
-  url: http://dashboard.diglib.org
+  url: https://desfordiv.library.northeastern.edu/resources/
   sizes: col-sm-12 col-md-6
   description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
   groups:
@@ -115,7 +115,7 @@
     - events
 
 - name: DLF Government Records Transparency and Accountability Group Webinars
-  image: 400x400.jpg
+  image: records-transparency.jpg
   url: https://wiki.diglib.org/Transparency-Accountability#Special_Meetings
   description: The DLF interest group on Government Records Transparency and Accountability seeks to support a broader culture of records transparency in the digital age.
   groups:
@@ -123,7 +123,7 @@
     - events
 
 - name: Creating Accessible Presentations Webinar
-  image: 400x400.jpg
+  image: accessible-presentation.jpg
   url: https://forum2017.diglib.org/presentations-webinar/
   description: Carli Spina and DLF’s 2017 Forum Inclusivity Committee with practical tips on making your conference talks maximally accessible.
   groups:
@@ -131,7 +131,7 @@
     - events
 
 - name: Strategies for Audiovisual Digitization Projects Webinar
-  image: 400x400.jpg
+  image: a-v.jpg
   url: https://www.diglib.org/strategies-audiovisual-digitization-projects/
   description: A free two-part series on approaches cultural memory institutions can take to digitally reformatting A/V materials and collections.
   groups:
