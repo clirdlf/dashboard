@@ -9,7 +9,7 @@
 - name: IRUS-USA
   image: irus-usa.jpg
   url: http://dashboard.diglib.org
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  description: Visualize, measure, and compare usage stats from your institutional repository.
   groups:
     - dlf-affiliates
     - visualizations
@@ -111,5 +111,35 @@
   image: forum.jpg
   url: https://www.diglib.org/dlf-events
   description: Our DLF Forum includes digital library practitioners from member institutions and the broader community, for whom it serves as a meeting place, marketplace, and congress.
+  groups:
+    - events
+
+- name: DLF Government Records Transparency and Accountability Group Webinars
+  image: 400x400.jpg
+  url: https://wiki.diglib.org/Transparency-Accountability#Special_Meetings
+  description: The DLF interest group on Government Records Transparency and Accountability seeks to support a broader culture of records transparency in the digital age.
+  groups:
+    - dlf-groups
+    - events
+
+- name: Creating Accessible Presentations Webinar
+  image: 400x400.jpg
+  url: https://forum2017.diglib.org/presentations-webinar/
+  description: Carli Spina and DLF’s 2017 Forum Inclusivity Committee with practical tips on making your conference talks maximally accessible.
+  groups:
+    - best-practices
+    - events
+
+- name: Strategies for Audiovisual Digitization Projects Webinar
+  image: 400x400.jpg
+  url: https://www.diglib.org/strategies-audiovisual-digitization-projects/
+  description: A free two-part series on approaches cultural memory institutions can take to digitally reformatting A/V materials and collections.
+  groups:
+    - events
+
+- name: IRUS-USA Webinar
+  image: irus-usa.jpg
+  url: https://www.diglib.org/recording-available-for-irus-usa-webinar/
+  description: A webinar about IRUS-USA, related community projects and efforts by the Digital Library Assessment Interest Group, what we’ve learned so far in this experiment, and evaluation and next steps.
   groups:
     - events
