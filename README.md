@@ -28,10 +28,10 @@ Projects are defined in `_data/projects.yml`. The `image` key should be just the
 Go to `_data/projects.yml`.
 
 - name:
-  image:
-  url:
-  description:
-  groups:
+-  image:
+-  url:
+-  description:
+-  groups:
     - find group categories at `_includes/sidebar.html`.
 
 ## Resizing Images
