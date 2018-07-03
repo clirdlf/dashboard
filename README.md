@@ -30,9 +30,9 @@ Go to `_data/projects.yml`.
 
 ## Defining projects
 
-    Projects are defined in `_data/projects.yml`. The `image` key should be just the file basename, not the full path.
+Projects are defined in `_data/projects.yml`. The `image` key should be just the file basename, not the full path.
 
-    > NOTE: If you have an 800x400 image (a long image), be sure to add the `sizes` key of "col-sm-12 col-md-6", or it will render the long tile as `400x200`.
+> NOTE: If you have an 800x400 image (a long image), be sure to add the `sizes` key of "col-sm-12 col-md-6", or it will render the long tile as `400x200`.
 
 ## Resizing Images
 
