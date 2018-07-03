@@ -28,7 +28,7 @@ Go to `_data/projects.yml`.
 -  groups:
     - find group categories at `_includes/sidebar.html`.
 
-    ## Defining projects
+## Defining projects
 
     Projects are defined in `_data/projects.yml`. The `image` key should be just the file basename, not the full path.
 
