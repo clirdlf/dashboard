@@ -66,7 +66,7 @@
     - featured
 
 - name: Digitizing Special Formats
-  image: 400x400.jpg
+  image: a-v.jpg
   url: https://wiki.diglib.org/Digitizing_Special_Formats
   description: A list of resources is curated by the Digital Library Federation for the benefit of cultural heritage professionals planning projects involving the digitization of rare and unique materials.
   groups:
@@ -74,7 +74,7 @@
     - reports
 
 - name: Valuing Labor in Digital Humanities
-  image: 400x400.jpg
+  image: labor.jpg
   url: https://docs.google.com/document/d/150-mhgyn5-MKxIXhxthOy6E6EuZsKbAo2PZS1nqcOE8/edit#heading=h.imgsi07xhn3e
   description: A research agenda for valuing labor.
   groups:
