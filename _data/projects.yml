@@ -73,6 +73,14 @@
     - best-practices
     - reports
 
+- name: Developing a Framework for Measuring Reuse of Digital Objects
+  image: reuse.jpg
+  url: https://reuse.diglib.org/
+  description: This toolkit will compile available resources, best practices, and use cases for studying the reuse of digital assets held by cultural heritage and research organizations.
+  groups:
+    - dlf-groups
+    - toolkits
+
 - name: Valuing Labor in Digital Humanities
   image: labor.jpg
   url: https://docs.google.com/document/d/150-mhgyn5-MKxIXhxthOy6E6EuZsKbAo2PZS1nqcOE8/edit#heading=h.imgsi07xhn3e
@@ -143,11 +151,3 @@
   description: A webinar about IRUS-USA, related community projects and efforts by the Digital Library Assessment Interest Group, what we’ve learned so far in this experiment, and evaluation and next steps.
   groups:
     - events
-
-- name: Developing a Framework for Measuring Reuse of Digital Objects
-  image: irus-usa.jpg
-  url: https://reuse.diglib.org/
-  description: This toolkit will compile available resources, best practices, and use cases for studying the reuse of digital assets held by cultural heritage and research organizations.
-  groups:
-    - dlf-groups
-    - toolkit
