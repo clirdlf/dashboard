@@ -19,7 +19,7 @@
   image: d4d.jpg
   url: https://desfordiv.library.northeastern.edu/resources/
   sizes: col-sm-12 col-md-6
-  description: Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  description: A framework to enable practitioners to investigate and teach the problem so that future infrastructural work proceeds in a critical spirit.
   groups:
     - dlf-affiliates
     - best-practices
@@ -98,7 +98,7 @@
     - featured
 
 - name: Annotated Bibliography for Cultural Assessment of Digital Collections
-  image: 400x400.jpg
+  image: cultural-assessment.jpg
   url: https://osf.io/94pgj/
   description: An initial environmental scan surrounding cultural and procedural biases in cultural heritage institutions with a focus on the impact of said biases on digital collections.
   groups:
