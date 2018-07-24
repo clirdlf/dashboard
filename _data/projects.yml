@@ -151,3 +151,11 @@
   description: A webinar about IRUS-USA, related community projects and efforts by the Digital Library Assessment Interest Group, what we’ve learned so far in this experiment, and evaluation and next steps.
   groups:
     - events
+
+- name: Endangered Data Week
+  image: 400x800.jpg
+  url: https://endangereddataweek.org/
+  description: Endangered Data Week is a new, collaborative effort, coordinated across campuses, nonprofits, libraries, citizen science initiatives, and cultural heritage institutions, to shed light on public datasets that are in danger of being deleted, repressed, mishandled, or lost.
+  groups:
+    - dlf-groups
+    - events
