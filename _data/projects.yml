@@ -8,7 +8,7 @@
 
 - name: IRUS-USA
   image: irus-usa.jpg
-  url: http://dashboard.diglib.org
+  url: https://jusp.jisc.ac.uk/irus-usa/
   description: Visualize, measure, and compare usage stats from your institutional repository.
   groups:
     - dlf-affiliates
