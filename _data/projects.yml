@@ -17,7 +17,7 @@
 
 - name: Design for Diversity
   image: d4d.jpg
-  url: https://desfordiv.library.northeastern.edu/resources/
+  url: https://desfordiv.library.northeastern.edu/
   sizes: col-sm-12 col-md-6
   description: A framework to enable practitioners to investigate and teach the problem so that future infrastructural work proceeds in a critical spirit.
   groups:
@@ -212,6 +212,6 @@
 - name: Deepening Resolve
   image: 400x400.jpg
   url: https://www.diglib.org/deepening-resolve/
-  description: "Core to our mission, CLIR and the Digital Library Federation stand in resolute support of our dedicated and diverse community of information professionals and organizational sponsors, promoting the fullest and most inclusive vision they may hold of the publics they serve: individuals and institutions that are both stalwart and vulnerable, people living now and generations yet to come."   
+  description: "Core to our mission, CLIR and the Digital Library Federation stand in resolute support of our dedicated and diverse community of information professionals and organizational sponsors, promoting the fullest and most inclusive vision they may hold of the publics they serve: individuals and institutions that are both stalwart and vulnerable, people living now and generations yet to come."
   groups:
     - advocacy
