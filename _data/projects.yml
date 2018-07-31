@@ -212,6 +212,6 @@
 - name: Deepening Resolve
   image: 400x400.jpg
   url: https://www.diglib.org/deepening-resolve/
-  description: Core to our mission, CLIR and the Digital Library Federation stand in resolute support of our dedicated and diverse community of information professionals and organizational sponsors, promoting the fullest and most inclusive vision they may hold of the publics they serve: individuals and institutions that are both stalwart and vulnerable, people living now and generations yet to come.   
+  description: "Core to our mission, CLIR and the Digital Library Federation stand in resolute support of our dedicated and diverse community of information professionals and organizational sponsors, promoting the fullest and most inclusive vision they may hold of the publics they serve: individuals and institutions that are both stalwart and vulnerable, people living now and generations yet to come."   
   groups:
     - advocacy
