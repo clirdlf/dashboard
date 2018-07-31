@@ -174,13 +174,6 @@
   groups:
     - advocacy
 
-- name: DLF Statement on Borders and Participation
-  image: 400x400.jpg
-  url: https://www.diglib.org/dlf-statement-on-borders-and-participation/
-  description: We decry all travel restrictions that target wide swaths of people based on religion, nationality, or ethnicity, and all violations of customary international law, such as the “right to seek and enjoy asylum” that is codified in the Universal Declaration of Human Rights.
-  groups:
-    - advocacy
-
 - name: DLF on Net Neutrality Regulations
   image: 400x400.jpg
   url: https://www.diglib.org/dlf-strongly-opposes-fcc-proposal-weaken-net-neutrality-regulations/
