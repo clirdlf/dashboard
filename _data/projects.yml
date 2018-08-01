@@ -12,7 +12,6 @@
   description: Visualize, measure, and compare usage stats from your institutional repository.
   groups:
     - dlf-affiliates
-    - visualizations
     - featured
 
 - name: Design for Diversity
@@ -167,44 +166,9 @@
   groups:
     - dlf-affiliates
 
-- name: DLF Statement on Borders and Participation
+- name: DLF Advocacy Statements
   image: 400x400.jpg
-  url: https://www.diglib.org/dlf-statement-on-borders-and-participation/
-  description: We decry all travel restrictions that target wide swaths of people based on religion, nationality, or ethnicity, and all violations of customary international law, such as the “right to seek and enjoy asylum” that is codified in the Universal Declaration of Human Rights.
+  url: https://www.diglib.org/advocacy/
+  description:
   groups:
-    - advocacy
-
-- name: DLF on Net Neutrality Regulations
-  image: 400x400.jpg
-  url: https://www.diglib.org/dlf-strongly-opposes-fcc-proposal-weaken-net-neutrality-regulations/
-  description: The Digital Library Federation strongly opposes any plan to repeal or weaken net neutrality rules.
-  groups:
-    - advocacy
-
-- name: DLF on Privacy, Preservation, & Free Access to Government Info via Title 44
-  image: 400x400.jpg
-  url: https://www.diglib.org/dlf-on-privacy-preservation-free-access-to-government-info-via-title-44/
-  description: This letter  wider library and archives community should be engaged by the House Committee on Administration in any process of revision, and underscores four basic principles that should guide any proposed modification of the current law.
-  groups:
-    - advocacy
-
-- name: DLF Statement on Charlottesville and White Supremacy
-  image: 400x400.jpg
-  url: https://www.diglib.org/dlf-statement-on-charlottesville-and-white-supremacy/
-  description: This letter  wider library and archives community should be engaged by the House Committee on Administration in any process of revision, and underscores four basic principles that should guide any proposed modification of the current law.
-  groups:
-    - advocacy
-
-- name: Statement on US Administration Budget Proposal by DLF Leadership
-  image: 400x400.jpg
-  url: https://www.diglib.org/statement-on-us-administration-budget-proposal-by-dlf-leadership/
-  description: The DLF community must represent [program officers and staff of public service organizations], and—in our support for the myriad ways these agencies serve us—we raise our voices to represent the communities and publics we serve together.
-  groups:
-    - advocacy
-
-- name: Deepening Resolve
-  image: 400x400.jpg
-  url: https://www.diglib.org/deepening-resolve/
-  description: "Core to our mission, CLIR and the Digital Library Federation stand in resolute support of our dedicated and diverse community of information professionals and organizational sponsors, promoting the fullest and most inclusive vision they may hold of the publics they serve: individuals and institutions that are both stalwart and vulnerable, people living now and generations yet to come."
-  groups:
-    - advocacy
+    - reports
