@@ -1,0 +1,16 @@
+/* TEAM */
+DLF Assistant Director: Katherine Kim
+Github: kimnkl
+
+CTO: Wayne Graham
+Github: @waynegraham
+
+
+/* THANKS */
+
+
+/* SITE */
+Site URL: https://dashboard.diglib.org
+Standards: HTML5, CSS3
+Components: Bootstrap, jQuery, Ionicons, Font Awesome, Icons et-line
+Software: Atom, git, Jekyll, SCSS, gulp, yarn

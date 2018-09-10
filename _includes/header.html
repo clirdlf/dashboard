@@ -2,6 +2,7 @@
     <!-- ========== Meta Tags ========== -->
     <meta charset="UTF-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link type="text/plain" rel="author" href="{{ '/humans.txt' | prepend: site.baseurl }}" />
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="keywords" content="{% if page.keywords %}{{page.keywords}}{% else %}{{ site.keywords }}{% endif %}">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
