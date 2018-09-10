@@ -2038,7 +2038,7 @@ img {
   transform: translateY(-10px);
   -webkit-transition: all ease-in-out 0.4s;
   transition: all ease-in-out 0.4s;
-  opacity: 0;
+  opacity: 1;
 }
 .project_box_one:hover img {
   /* IE 9 */
