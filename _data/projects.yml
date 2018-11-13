@@ -145,7 +145,7 @@
     - events
 
 - name: IRUS-USA Webinar
-  image: irus-usa.jpg
+  image: irus-usa-2.jpg
   url: https://www.diglib.org/recording-available-for-irus-usa-webinar/
   description: A webinar about IRUS-USA, related community projects and efforts by the Digital Library Assessment Interest Group, what we’ve learned so far in this experiment, and evaluation and next steps.
   groups:
